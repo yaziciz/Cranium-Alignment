@@ -92,3 +92,14 @@ def show_difference(vol1, vol2):
 
     # Visualize the volumes
     visualize_volumes(vol1, vol2)
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) != 3:
+        print("Usage: python difference.py <volume1> <volume2>")
+        sys.exit(1)
+    
+    vol1_path = sys.argv[1]
+    vol2_path = sys.argv[2]
+    
+    show_difference(vol1_path, vol2_path)
