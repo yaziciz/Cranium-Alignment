@@ -69,8 +69,8 @@ def align(nii_path, output_path, debug=False):
         
         check = False #used to determine the correctness of landmarks
 
-        if debug:
-            visualize_sitk_image_3d(input_sitk, threshold=0)
+        #if debug:
+        #    visualize_sitk_image_3d(input_sitk, threshold=0)
 
         orig_slice_thickness = input_sitk.GetSpacing()[2]
         if orig_slice_thickness > 1.0:
