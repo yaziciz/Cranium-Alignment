@@ -26,7 +26,6 @@ def test_align(test_data_path, output_path):
             # Show the difference between the original and aligned volumes
             show_difference(test_case_path, aligned_path)
 
-
 if __name__ == '__main__':
     config = configparser.ConfigParser()
     project_root = os.path.dirname(os.path.abspath(__file__))
