@@ -1,0 +1,16 @@
+name: cranium-alignment
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - SimpleITK
+  - torch
+  - monai
+  - scikit-image
+  - pyvista
+  - sympy
+  - configparser
+  - pip

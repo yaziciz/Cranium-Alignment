@@ -23,7 +23,7 @@ Cranium-Alignment is a Python toolkit for automatic alignment of head CT scans u
 
 2. **Install dependencies:**
     ```bash
-    pip install -r requirements.txt
+    conda env create -f requirements.yaml
     ```
     *(Make sure you have Python 3.8+ and [PyTorch](https://pytorch.org/) with CUDA if you want GPU acceleration.)*
 
