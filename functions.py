@@ -62,10 +62,12 @@ def align(nii_path, output_path, debug=False):
 
     max_iterations = 3
     iteration = 0
+
+    spacing=(1.5,1.5,1.5)
+    
     while iteration < max_iterations:
         
         check = False #used to determine the correctness of landmarks
-        spacing=(1.5,1.5,1.5)
 
         if debug:
             visualize_sitk_image_3d(input_sitk, threshold=0)
